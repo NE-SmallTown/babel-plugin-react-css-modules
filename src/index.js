@@ -135,6 +135,7 @@ export default ({
           return;
         }
 
+        // 在filename文件里面引用了targetResourcePath这个路径的资源
         const filename = stats.file.opts.filename;
         const targetResourcePath = getTargetResourcePath(path, stats);
 
