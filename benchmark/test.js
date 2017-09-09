@@ -110,7 +110,7 @@ suite.add('`react-css-modules`', () => {
   minSamples
 });
 
-suite.add('`babel-plugin-react-css-modules` (runtime, anonymous)', () => {
+suite.add('`babel-plugin-react-css-modules-ne-smalltown` (runtime, anonymous)', () => {
   const styleModuleImportMap = {
     anonymous: {
       bar: 'b',
@@ -143,7 +143,7 @@ suite.add('`babel-plugin-react-css-modules` (runtime, anonymous)', () => {
   minSamples
 });
 
-suite.add('`babel-plugin-react-css-modules` (runtime, named)', () => {
+suite.add('`babel-plugin-react-css-modules-ne-smalltown` (runtime, named)', () => {
   const styleModuleImportMap = {
     qux: {
       bar: 'b',

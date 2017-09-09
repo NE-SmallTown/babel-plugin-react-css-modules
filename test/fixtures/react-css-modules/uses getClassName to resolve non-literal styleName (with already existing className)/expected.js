@@ -1,4 +1,4 @@
-import _getClassName from 'babel-plugin-react-css-modules/dist/browser/getClassName';
+import _getClassName from 'babel-plugin-react-css-modules-ne-smalltown/dist/browser/getClassName';
 import bar from './bar.css';
 import './foo.css';
 

@@ -37,7 +37,7 @@ export default ({
             filenameMap[filename].importedHelperIndentifier
           )
         ],
-        t.stringLiteral('babel-plugin-react-css-modules/dist/browser/getClassName')
+        t.stringLiteral('babel-plugin-react-css-modules-ne-smalltown/dist/browser/getClassName')
       )
     );
 
