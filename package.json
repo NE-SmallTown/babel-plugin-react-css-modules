@@ -1,9 +1,5 @@
 {
-  "author": {
-    "email": "gajus@gajus.com",
-    "name": "Gajus Kuizinas",
-    "url": "http://gajus.com"
-  },
+  "author": "NE-SmallTown(https://github.com/NE-SmallTown)",
   "dependencies": {
     "ajv": "^4.11.4",
     "babel-plugin-syntax-jsx": "^6.18.0",
@@ -48,10 +44,10 @@
   ],
   "license": "BSD-3-Clause",
   "main": "dist/index.js",
-  "name": "babel-plugin-react-css-modules",
+  "name": "babel-plugin-react-css-modules-ne-smalltown",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gajus/babel-plugin-react-css-modules"
+    "url": "https://github.com/NE-SmallTown/babel-plugin-react-css-modules.git"
   },
   "scripts": {
     "buildHelper": "mkdirp ./dist/browser && cross-env NODE_ENV=production && babel ./src/getClassName.js --out-file ./dist/browser/getClassName.js --source-maps --no-babelrc --plugins transform-es2015-modules-commonjs,transform-flow-strip-types --presets es2015",
@@ -60,5 +56,5 @@
     "precommit": "npm run test",
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-register"
   },
-  "version": "1.1.0"
+  "version": "2.8.0"
 }
