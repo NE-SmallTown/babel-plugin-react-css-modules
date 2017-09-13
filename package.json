@@ -56,5 +56,5 @@
     "precommit": "npm run test",
     "test": "cross-env NODE_ENV=test mocha --compilers js:babel-register"
   },
-  "version": "2.8.2"
+  "version": "2.8.3"
 }

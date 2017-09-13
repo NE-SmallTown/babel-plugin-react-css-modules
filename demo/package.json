@@ -1,7 +1,7 @@
 {
   "private": true,
   "scripts": {
-    "build": "cd ./node_modules/.bin && babel ../../src --out-dir ../../lib"
+    "build": "./node_modules/.bin/babel src --out-dir lib"
   },
   "dependencies": {
     "babel-plugin-react-css-modules": "^2.1.3",

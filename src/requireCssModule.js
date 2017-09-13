@@ -72,15 +72,18 @@ const getTokens = (runner, cssSourceFilePath: string, filetypes, extractCssOpts)
     .process(readFileSync(cssSourceFilePath, 'utf-8'), options);
 
   // only if the css which we import doesn't be written before,we wirte it to the file
+  // TODO if one css file imported by many files, this will cause error
   if (cssSourceFilePathArr.indexOf(cssSourceFilePath) === -1 && extractCssOpts) {
     if (extractCssOpts.to) {
       const toPath = extractCssOpts.to;
 
-      wirteCssToFile(resolve(process.cwd(), `../../${toPath}`), lazyResult);
+      console.log(`babel-plugin-react-css-modules-ne-smalltown: write ${cssSourceFilePath} to ${resolve(process.cwd(), toPath)}\n`);
+      wirteCssToFile(resolve(process.cwd(), toPath), lazyResult);
     } else if (extractCssOpts.stayInOwnComponent) {
       const filename = basename(cssSourceFilePath);
 
-      wirteCssToFile(resolve(cssSourceFilePath, `../cssModule/${filename}`), lazyResult);
+      console.log(`babel-plugin-react-css-modules-ne-smalltown: write ${cssSourceFilePath} to ${resolve(cssSourceFilePath, filename)}\n`);
+      wirteCssToFile(resolve(cssSourceFilePath, filename), lazyResult);
     }
   }
 
